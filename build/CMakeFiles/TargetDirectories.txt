@@ -1,0 +1,11 @@
+/home/icore/ros2_ws/src/box/build/CMakeFiles/uninstall.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/box_uninstall.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/spawn_box.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/spawn_camera.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/test.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/edit_cache.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/rebuild_cache.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/list_install_components.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/install.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/install/local.dir
+/home/icore/ros2_ws/src/box/build/CMakeFiles/install/strip.dir

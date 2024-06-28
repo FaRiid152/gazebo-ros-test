@@ -9,6 +9,10 @@ def generate_launch_description():
     package_name = 'box'
     world_file_name = 'empty.world'
     world = os.path.join(get_package_share_directory(package_name), 'models', world_file_name)
+    # Path to the zed_camera URDF file
+    camera_file_name =  'zed_camera'
+    camera = os.path.join(get_package_share_directory(package_name), 'models', 'zed_camera.urdf')
+
 
     return LaunchDescription([
         IncludeLaunchDescription(
@@ -22,6 +26,14 @@ def generate_launch_description():
             package='box',
             executable='spawn_box',
             name='spawn_box',
+            output='screen'
+        ),
+        
+
+        Node(
+            package='box',
+            executable='spawn_camera',
+            name='spawn_camera',
             output='screen'
         )
     ])

@@ -1,0 +1,4 @@
+source;share/box/local_setup.bash
+source;share/box/local_setup.dsv
+source;share/box/local_setup.sh
+source;share/box/local_setup.zsh

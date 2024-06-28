@@ -9,15 +9,20 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(gazebo_msgs REQUIRED)
-find_package(gazebo_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # Add executable
 add_executable(spawn_box src/spawn_box.cpp)
-ament_target_dependencies(spawn_box rclcpp gazebo_msgs geometry_msgs)
+add_executable(spawn_camera src/spawn_camera.cpp)
+
+# Link dependencies
+ament_target_dependencies(spawn_box rclcpp gazebo_msgs geometry_msgs ament_index_cpp)
+ament_target_dependencies(spawn_camera rclcpp gazebo_msgs geometry_msgs ament_index_cpp)
+
 
 # Install executable
 install(TARGETS
-  spawn_box
+  spawn_box spawn_camera
   DESTINATION lib/${PROJECT_NAME})
 
 # Install launch files
